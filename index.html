@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content="7; url=https://viesly.net/" />
+    <title>Biasly is now Viesly</title>
+    <meta
+      name="description"
+      content="Biasly.net has been renamed to Viesly.net. You will be redirected automatically."
+    />
+    <link rel="canonical" href="https://viesly.net/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --vlt-y: #f5ad18;
+        --vlt-y-deep: #c98a00;
+        --vlt-y-bg: #fff8e7;
+        --vlt-brown: #78350f;
+        --vlt-ink: #1c1917;
+        --vlt-mid: #44403c;
+        --vlt-muted: #78716c;
+        --vlt-paper: #fafaf8;
+        --vlt-cream: #fff8ee;
+        --vlt-bd: #e7e3dc;
+        --vlt-serif: "Cormorant Garamond", Georgia, serif;
+        --vlt-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        min-height: 100%;
+      }
+
+      body {
+        margin: 0;
+        background:
+          linear-gradient(120deg, rgba(245, 173, 24, 0.08) 0 1px, transparent 1px 34%),
+          linear-gradient(63deg, transparent 0 58%, rgba(120, 53, 15, 0.06) 58% 58.4%, transparent 58.4%),
+          repeating-linear-gradient(90deg, rgba(231, 227, 220, 0.36) 0 1px, transparent 1px 92px),
+          repeating-linear-gradient(0deg, rgba(231, 227, 220, 0.28) 0 1px, transparent 1px 84px),
+          var(--vlt-paper);
+        color: var(--vlt-ink);
+        font-family: var(--vlt-sans);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      main {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 32px 20px;
+      }
+
+      .notice {
+        background: rgba(255, 255, 255, 0.88);
+        border: 1px solid var(--vlt-bd);
+        border-radius: 18px;
+        box-shadow: 0 18px 70px rgba(28, 25, 23, 0.08);
+        max-width: 760px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+      }
+
+      .notice::before {
+        background: var(--vlt-y);
+        content: "";
+        display: block;
+        height: 6px;
+        width: 100%;
+      }
+
+      .content {
+        padding: clamp(30px, 6vw, 56px);
+      }
+
+      .brand {
+        align-items: center;
+        display: flex;
+        gap: 12px;
+        margin-bottom: 34px;
+      }
+
+      .mark {
+        flex: 0 0 auto;
+        height: 34px;
+        width: 34px;
+      }
+
+      .brand-name {
+        font-size: 17px;
+        font-weight: 700;
+      }
+
+      .eyebrow {
+        color: var(--vlt-y-deep);
+        font-size: 12px;
+        font-weight: 700;
+        margin: 0 0 14px;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        color: var(--vlt-ink);
+        font-family: var(--vlt-serif);
+        font-size: clamp(42px, 8vw, 78px);
+        font-weight: 700;
+        line-height: 0.92;
+        margin: 0;
+        max-width: 620px;
+      }
+
+      .summary {
+        color: var(--vlt-mid);
+        font-size: clamp(17px, 2.4vw, 21px);
+        line-height: 1.65;
+        margin: 26px 0 0;
+        max-width: 620px;
+      }
+
+      .redirect-row {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 34px;
+      }
+
+      .countdown {
+        align-items: center;
+        background: var(--vlt-y-bg);
+        border: 1px solid rgba(245, 173, 24, 0.4);
+        border-radius: 999px;
+        color: var(--vlt-brown);
+        display: inline-flex;
+        font-size: 14px;
+        font-weight: 700;
+        min-height: 44px;
+        padding: 0 18px;
+      }
+
+      a {
+        align-items: center;
+        background: var(--vlt-ink);
+        border-radius: 999px;
+        color: #fff;
+        display: inline-flex;
+        font-size: 14px;
+        font-weight: 700;
+        min-height: 44px;
+        padding: 0 20px;
+        text-decoration: none;
+      }
+
+      a:focus-visible {
+        outline: 3px solid rgba(245, 173, 24, 0.55);
+        outline-offset: 3px;
+      }
+
+      @media (max-width: 560px) {
+        main {
+          align-items: stretch;
+          padding: 16px;
+        }
+
+        .notice {
+          border-radius: 14px;
+          margin: auto 0;
+        }
+
+        .brand {
+          margin-bottom: 28px;
+        }
+
+        .redirect-row {
+          align-items: stretch;
+          flex-direction: column;
+        }
+
+        .countdown,
+        a {
+          justify-content: center;
+          width: 100%;
+        }
+      }
+    </style>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const redirectUrl = "https://viesly.net/";
+        const counter = document.querySelector("[data-countdown]");
+        let remaining = 7;
+
+        const render = () => {
+          if (counter) {
+            counter.textContent = `Redirecting in ${remaining} second${remaining === 1 ? "" : "s"}`;
+          }
+        };
+
+        render();
+
+        const timer = window.setInterval(() => {
+          remaining -= 1;
+          render();
+
+          if (remaining <= 0) {
+            window.clearInterval(timer);
+            window.location.replace(redirectUrl);
+          }
+        }, 1000);
+      });
+    </script>
+  </head>
+  <body>
+    <main>
+      <section class="notice" aria-labelledby="page-title">
+        <div class="content">
+          <div class="brand" aria-label="Viesly">
+            <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="1.25" y="1.25" width="21.5" height="21.5" rx="6.25" fill="#F5AD18" />
+              <path
+                d="M6.7 6.6L11.95 17.45L17.3 6.6"
+                stroke="#1C1917"
+                stroke-width="2.35"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span class="brand-name">Viesly</span>
+          </div>
+
+          <p class="eyebrow">Biasly has moved</p>
+          <h1 id="page-title">biasly.net is now viesly.net</h1>
+          <p class="summary">
+            We renamed Biasly to Viesly and moved the product to a cleaner, more stable pipeline.
+            You will be redirected to viesly.net automatically.
+          </p>
+
+          <div class="redirect-row">
+            <span class="countdown" data-countdown>Redirecting in 7 seconds</span>
+            <a href="https://viesly.net/">Go to Viesly now</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
